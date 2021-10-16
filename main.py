@@ -34,7 +34,6 @@ def build_args():
     args = parser.parse_args()
     args.exp_name = f"{args.img_size}_{args.pt}"
     args.epochs = args.warmup_epo + args.cosine_epo
-    args.epochs = 1 #####
     args.T_max = args.epochs
     return args
 

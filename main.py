@@ -39,6 +39,7 @@ def build_args():
 
 def train(args, device):
     # model 1
+    args.img_size = [384, 768]
     _ = run_train(args, device, folds=0)
     # model 2
     args.img_size = [512, 512]

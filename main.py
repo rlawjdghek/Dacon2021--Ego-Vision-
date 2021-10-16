@@ -27,7 +27,7 @@ def build_args():
     #### config ####
     parser.add_argument("--debug", type=bool, default=False)
     parser.add_argument("--amp", type=bool, default=True)
-    parser.add_argument("--gpu", type=str, default="0")
+    parser.add_argument("--gpu", type=str, default="0, 1")
     parser.add_argument("--num_workers", type=int, default=8)
     parser.add_argument("--seed", type=int, default=2021)
 
@@ -83,4 +83,5 @@ if __name__ == '__main__':
         train(args, device)
     else:
         preds = test(args, device)
+        os.makedirs("./submission", exist_ok=True)
         submit(preds)

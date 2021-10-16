@@ -1,14 +1,14 @@
 # Dacon2021-[Ego-Vision] 손 인식
 
 ### envs
-pytorch=1.9.1
-cuda=11.1
-albumentations=1.0.3
-pytorch-warmup=0.0.4
-scipy=1.7.1
-scikit-learn=1.0
-timm=0.4.12
-tqdm=4.62.3
+pytorch=1.9.1\
+cuda=11.1\
+albumentations=1.0.3\
+pytorch-warmup=0.0.4\
+scipy=1.7.1\
+scikit-learn=1.0\
+timm=0.4.12\
+tqdm=4.62.3\
 
 resnet50과 seresnet50을 (512, 512), (384, 768)로 훈련하여 4개의 다른 모델을 앙상블 하였음. 
 

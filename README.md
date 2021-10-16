@@ -1,6 +1,6 @@
 # Dacon2021-[Ego-Vision] 손 인식
 
-### Train and save model 
+### Train and save models
 ```bash
 python main.py
 ```

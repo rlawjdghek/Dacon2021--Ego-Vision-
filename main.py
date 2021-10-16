@@ -10,7 +10,7 @@ def build_args():
     parser.add_argument("--dir_", type=str, default=f"./saved_models")
 
     #### train & test ####
-    parser.add_argument("--train", type=bool, default=True)
+    parser.add_argument("--test", default=False, action="store_true")
     parser.add_argument("--tta", type=int, default=0)
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--weight_decay", type=float, default=1e-6)
@@ -79,7 +79,7 @@ def submit(preds):
 if __name__ == '__main__':
     args = build_args()
     device = torch.device(f"cuda" if torch.cuda.is_available() else "cpu")
-    if args.train:
+    if not args.test:
         train(args, device)
     else:
         preds = test(args, device)

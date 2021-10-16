@@ -8,7 +8,7 @@ pytorch-warmup=0.0.4\
 scipy=1.7.1\
 scikit-learn=1.0\
 timm=0.4.12\
-tqdm=4.62.3\
+tqdm=4.62.3
 
 resnet50과 seresnet50을 (512, 512), (384, 768)로 훈련하여 4개의 다른 모델을 앙상블 하였음. 
 

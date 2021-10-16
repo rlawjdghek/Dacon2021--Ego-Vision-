@@ -23,5 +23,5 @@ python main.py
 python main.py --test
 ```
 
-* [구글 드라이브](https://drive.google.com/drive/folders/1DF78Y855yCuZ0V21JEI6qkcya4VyOzjl)에서 pre-trained 모델을 다운 받아
-./pretrained/ directory에 넣은 후 추론.
+* [구글 드라이브](https://drive.google.com/drive/folders/1DF78Y855yCuZ0V21JEI6qkcya4VyOzjl)에서 pre-trained 모델을 다운 받은 후
+./pretrained/ 애 넣은 뒤 추론.

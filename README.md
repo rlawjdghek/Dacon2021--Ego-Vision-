@@ -36,8 +36,6 @@ $ conda activate ego
 $ pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
 ```
 
-resnet50과 seresnet50을 (512, 512), (384, 768)로 훈련하여 4개의 다른 모델을 앙상블.
-
 ## Training & Save models
 ```bash
 python main.py
